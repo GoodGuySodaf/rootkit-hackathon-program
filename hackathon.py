@@ -9,7 +9,7 @@ subprocess = subprocess.Popen("curl hack.rootkit.education:2870", shell=True, st
 subprocess_return = subprocess.stdout.readlines()
 print(subprocess_return)
 
-#take the numbers from the shell output can calculate
+#take the numbers from the shell output and calculate
 code = int(str(subprocess_return).split()[11]) + int(str(subprocess_return).split()[13])
 
 #input the result to shell
