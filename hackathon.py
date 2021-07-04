@@ -10,10 +10,10 @@ subprocess_return = subprocess.stdout.readlines()
 print(subprocess_return)
 
 #take the numbers from the shell output and calculate
-code = int(str(subprocess_return).split()[11]) + int(str(subprocess_return).split()[13])
+result = int(str(subprocess_return).split()[11]) + int(str(subprocess_return).split()[13])
 
 #input the result to shell
-stream = os.popen(str(code))
+stream = os.popen(str(result))
 
 #print out shell respond
 output = stream.read()
